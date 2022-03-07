@@ -58,7 +58,7 @@ and set the parallel option to `on`
 Run the following demo to see the result of image segmentation on peppers.png image:
 
 ```
-demo_minCEntropy_modified_Older_Version.m
+demo_modified_minCEntropy.m
 ```
 
 The demo performs minCEntropy clustering to partition the observations of the n*p data matrix X into K clusters and returns an n-by-1 vector (mem) containing cluster indices of each observation. Rows are the number of objects and cols the number of features.
