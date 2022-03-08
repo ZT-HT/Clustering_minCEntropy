@@ -37,8 +37,6 @@ title('segmeted image')
 
 This example will take quite a long time to run (e.g. XXX seconds on a INSERT PROCESSOR HERE), see the **parallel execution** section for details on how to make it faster.
 
-If you have a version of MATLAB older than 2021a, refer to the demo execution details below.
-
 ## Parallel execution 
 
 If you have access to the [Parallel Computing Toolbox](https://www.mathworks.com/products/parallel-computing.html), you can switch parallelisation on which can result in significant improvements in speed.  Create a parallel pool:
@@ -53,6 +51,8 @@ and set the parallel option to `on`
 [mem]=minCEntropy_modified_Newer_Version(X,K,sigma_factor=1,n_run=10,parallel="on",verbose=true);
 ```
 
+If you have a version of MATLAB older than 2021a, refer to the demo execution details below.
+
 ## Demo execution
 
 Run the following demo to see the result of image segmentation on peppers.png image:
@@ -62,7 +62,7 @@ demo_modified_minCEntropy.m
 ```
 
 The demo performs minCEntropy clustering to partition the observations of the n*p data matrix X into K clusters and returns an n-by-1 vector (mem) containing cluster indices of each observation. Rows are the number of objects and cols the number of features.
-Based on the version of MATLAB this demo calls one of two functions demo_minCEntropy_modified_Older_Version.m (for MATLAB versions older than R2021a) or demo_minCEntropy_modified_Newer_Version (for MATLAB versions newer than R2021a).
+Based on the version of MATLAB this demo calls one of two functions demo_minCEntropy_modified_Older_Version.m (for MATLAB versions older than R2021a) or demo_minCEntropy_modified_Newer_Version.m (for MATLAB versions newer than R2021a).
 
 ## Users of MATLAB older than R2020b
 
