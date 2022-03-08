@@ -33,9 +33,21 @@ subplot(1,2,2);imshow(uint8(segmented_image))
 title('segmeted image')
 ```
 
+The output of running the code is 
+
+```
+Initialising using MATLABkmeans
+Parallel mode is  off
+Sigma factor: 1, changes: 12866, quality: 178360.057143
+>>>>>>>>Finished clustering. best quality: 178360.057143
+
+```
+
 ![](https://github.com/ZT-HT/minCEntropy_clustering/blob/main/segmented.bmp)
 
-This example will take quite a long time to run (e.g. XXX seconds on a INSERT PROCESSOR HERE), see the **parallel execution** section for details on how to make it faster.
+
+
+This example will take quite a long time to run (e.g. 2617.392 s seconds on a Intel(R) Core(TM) i7-10710U CPU @ 1.10GHz 1.61 GHz), see the **parallel execution** section for details on how to make it faster.
 
 ## Parallel execution 
 
@@ -50,6 +62,17 @@ and set the parallel option to `on`
 ```
 [mem]=minCEntropy_modified_Newer_Version(X,K,sigma_factor=1,n_run=10,parallel="on",verbose=true);
 ```
+
+
+To check the effect of parallisation, the running time with parallel options of `on` and `off` are compared in the table below. Setting the option to `on` allows speed-ups of 2 times relative to the option `off`. 
+
+
+ |  Parallel option     | Time   | Speed-up | 
+ | ------------------   | ----   | -------- | 
+ |       off                  | 2617.392 s       | 1x |
+ |       on                   | 1421.474 s       |  2x  |
+  
+
 
 If you have a version of MATLAB older than 2021a, refer to the demo execution details below.
 
@@ -85,7 +108,7 @@ if version_year<2021
 
 To run the code on your data, replace X in demo_minCEntropy_modified.m with your data. To run the code on a different image, replace peppers.png with your image.
 
-Lines 27-40 display the original image and the segmented image and are not needed for the data other than images and should be commented for other types of data. 
+Lines 28-40 in demo_modified_minCEntropy.m display the original image and the segmented image and are not needed for the data other than images and should be commented for other types of data. 
 
 K is the number of desired clusters. n_run and sigma_factor in demo_minCEntropy_modified_Newer_Version and demo_minCEntropy_modified_Older_Version are the other hyperparameters. 
 
