@@ -74,7 +74,8 @@ To check the effect of parallisation, the running time with parallel options of 
   
 
 
-If you have a version of MATLAB older than 2021a, refer to the demo execution details below.
+If you have a version of MATLAB older than 2021a, refer to the **demo execution** details below.
+
 
 ## Demo execution
 
