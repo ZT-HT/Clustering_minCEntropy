@@ -101,9 +101,9 @@ minCEntropyClusteringOld.m
 ```
 
 
-To run the code on a different image, replace peppers.png with your image. To run the code on any other type of data, replace X in minCEntropyClustering.m (in the current folder) and minCEntropyClusteringOld.m (in `Old MATALB version` folder) with your data. 
+To run the code on a different image, replace peppers.png with your image. To run the code on any other types of data, replace X in minCEntropyClustering.m (in the current folder) and minCEntropyClusteringOld.m (in `Old MATALB version` folder) with your data. 
 
-Lines 17-31 in minCEntropyClustering.m display the original image and the segmented image and are not needed for the data other than images and should be commented for other types of data. 
+Lines 18-32 in minCEntropyClustering.m (in the current folder) and Lines 20-34 in minCEntropyClusteringOld.m (in `Old MATALB version` folder) display the original image and the segmented image and are not needed for the data other than images and should be commented for other types of data. 
 
 K is the number of desired clusters. n_run and sigma_factor in minCEntropyClustering.m (in the current folder) and minCEntropyClusteringOld.m (in `Old MATALB version` folder) are the other hyperparameters. 
 
