@@ -1,26 +1,17 @@
 clc;clear;close all;
 
 image=imread('peppers.png');
+
 K=12; % Number of clusters
 image=double(image);
+
+delete(gcp('nocreate'))
 
 [rows, columns,dim]=size(image);
 X=reshape(image,[rows*columns dim]);
 
-% Check MATLAB version
-version_year=isMATLABReleaseOlderThan("R2021a");
-
-if version_year==1
-
-mem=demo_minCEntropy_modified_Older_Version(X,K); % run minCEntropy+ 10 times
-
-else 
-    
-delete(gcp('nocreate'))
    
-mem=demo_minCEntropy_modified_Newer_Version(X,K); % run minCEntropy+ 10 times
-
-end
+mem=minCEntropy(X,K,sigma_factor=1,n_run=10,parallel="on",verbose=true);  % run minCEntropy+ 10 times
 
 
 X=reshape(X,[rows columns dim]);
@@ -37,6 +28,6 @@ segmented_image =  grayscale_assignment(X,mem1);
 end
 
 subplot(1,2,2);imshow(uint8(segmented_image))
-title('segmeted image')
+title('segmented image')
 
 
