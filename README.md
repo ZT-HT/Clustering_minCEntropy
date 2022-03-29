@@ -96,7 +96,7 @@ The demo performs minCEntropy clustering to partition the observations of the n*
 
 ## Users of MATLAB older than R2021a
 
-If your MATLAB version is older than R2021a, run the following demo in [Old MATLAB Version](https://github.com/ZT-HT/Clustering_minCEntropy/tree/main/Old%20MATLAB%20version) to see the result of image segmentation on peppers.png image:
+If your MATLAB version is older than R2021a, run the following demo in [Old MATLAB version](https://github.com/ZT-HT/Clustering_minCEntropy/tree/main/Old%20MATLAB%20version) to see the result of image segmentation on peppers.png image:
 
 ```
 minCEntropyClusteringOld.m
