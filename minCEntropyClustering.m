@@ -6,6 +6,7 @@ K=12; % Number of clusters
 image=double(image);
 
 delete(gcp('nocreate'))
+parpool('threads')
 
 [rows, columns,dim]=size(image);
 X=reshape(image,[rows*columns dim]);
