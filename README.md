@@ -43,7 +43,7 @@ Sigma factor: 1, changes: 12866, quality: 178360.057143
 
 ```
 
-![](https://github.com/ZT-HT/minCEntropy_clustering/blob/main/segmented.bmp)
+![](https://github.com/ZT-HT/Clustering_minCEntropy/blob/main/segmented.bmp)
 
 
 
