@@ -94,18 +94,18 @@ The demo performs minCEntropy clustering to partition the observations of the n*
 
 ## Users of MATLAB older than R2021a
 
-If your MATLAB version is older than R2021a, run the following demo in `Old MATALB version` folder to see the result of image segmentation on peppers.png image:
+If your MATLAB version is older than R2021a, refer to `Old MATALB version` folder  and run the following demo to see the result of image segmentation on peppers.png image:
 
 ```
 minCEntropyClusteringOld.m
 ```
 
 
-To run the code on a different image, replace peppers.png with your image. To run the code on any other types of data, replace X in minCEntropyClustering.m (in the current folder) and minCEntropyClusteringOld.m (in `Old MATALB version` folder) with your data. 
+To run the code on a different image, replace peppers.png with your image. To run the code on other types of data, replace X in minCEntropyClustering.m (in the current folder) and minCEntropyClusteringOld.m (in `Old MATALB version` folder) with your data. 
 
 Lines 18-32 in minCEntropyClustering.m (in the current folder) and Lines 20-34 in minCEntropyClusteringOld.m (in `Old MATALB version` folder) display the original image and the segmented image and are not needed for the data other than images and should be commented for other types of data. 
 
-K is the number of desired clusters. n_run and sigma_factor in minCEntropyClustering.m (in the current folder) and minCEntropyClusteringOld.m (in `Old MATALB version` folder) are the other hyperparameters. 
+K is the number of desired clusters and n_run and sigma_factor are the other hyperparameters. 
 
 The demo code has been tested on three versions of MATLAB, R2021a, R2020b and R2018a and the outputs were
 
