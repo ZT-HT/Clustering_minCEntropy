@@ -4,7 +4,7 @@ Please cite the reference below when using this software:
 
 Tirandaz Z, Croucher M. Modified minCEntropy clustering: partitional clustering using the minimum conditional Entropy objective for image segmentation. Submitted, 2022
 
-This repository contains the software used in the paper entitled "Efficient human estimates of relevant colors of paintings" (Publication in progress).  It uses a modified version of the minCEntropy algorithm developed by Xuan Vinh Nguyen [2010] to perform image segmentation.  The primary difference between this implementation of minCEntropy and the original is that this version is faster and more suited to larger data sets. 
+This repository contains the software used in the paper entitled "Efficiency of visual image quantization by relevant colors" (Publication in progress).  It uses a modified version of the minCEntropy algorithm developed by Nguyen Xuan Vinh and Julien Epps [2010] to perform image segmentation.  The primary difference between this implementation of minCEntropy and the original is that this version is faster and more suited to larger data sets. 
 
 Here is a demonstration of its use for segmenting the image `peppers.png` (which is built into MATLAB) using 12 clusters
 
@@ -144,6 +144,7 @@ Parallel pool using the 'local' profile is shutting down.
 
 ## References
 
-* Xuan Vinh Nguyen (2022). The minCEntropy algorithm for alternative clustering (https://www.mathworks.com/matlabcentral/fileexchange/32994-the-mincentropy-algorithm-for-alternative-clustering), MATLAB Central File Exchange. Retrieved March 7, 2022.
+* Nguyen Xuan Vinh (2022). The minCEntropy algorithm for alternative clustering (https://www.mathworks.com/matlabcentral/fileexchange/32994-the-mincentropy-algorithm-for-alternative-clustering), MATLAB Central File Exchange. Retrieved March 7, 2022.
+* Nguyen Xuan Vinh, Julien Epps (2010). minCEntropy: a Novel Information Theoretic Approach for the Generation of Alternative Clusterings, the 10th IEEE Int. Conf. on Data Mining (ICDM'10).
 
 
